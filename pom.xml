@@ -213,6 +213,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                 <noverify />
+                  <folders>
+                       <folder>/usr/local/apache-maven-3.5.4/jar-resources</folder>
+                  </folders>
+           </configuration>
             </plugin>
         </plugins>
     </build>
