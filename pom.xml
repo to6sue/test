@@ -237,7 +237,7 @@
             <version>3.2</version>
             <configuration>
              <rulesets>
-              <ruleset>/rulesets/basic.xml</ruleset>
+              <ruleset>./basic.xml</ruleset>
              </rulesets>
              <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
              <targetJdk>${java.version}</targetJdk>
