@@ -238,8 +238,8 @@
               <ruleset>/rulesets/basic.xml</ruleset>
               <ruleset>/rulesets/unusedcode.xml</ruleset>
              </rulesets>
-             <sourceEncoding>${maven.compiler.encoding}</sourceEncoding>
-             <targetJdk>${maven.compiler.source}</targetJdk>
+             <sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+             <targetJdk>${java.version}</targetJdk>
             </configuration>
            </plugin>
         </plugins>
