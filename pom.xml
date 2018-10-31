@@ -220,6 +220,28 @@
                   </folders>
            </configuration>
             </plugin>
+            <!-- FindBugs 리포트 생성 플러그인 -->
+           <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>1.2</version>
+            <configuration>
+             <threshold>Low</threshold><!-- High, Default, Low, Ignore -->
+             <xmlOutput>true</xmlOutput>
+            </configuration>
+           </plugin>
+           <!-- PMD 리포트 생성 플러그인 -->
+           <plugin>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <configuration>
+             <rulesets>
+              <ruleset>/rulesets/basic.xml</ruleset>
+              <ruleset>/rulesets/unusedcode.xml</ruleset>
+             </rulesets>
+             <sourceEncoding>${maven.compiler.encoding}</sourceEncoding>
+             <targetJdk>${maven.compiler.source}</targetJdk>
+            </configuration>
+           </plugin>
         </plugins>
     </build>
 </project>
